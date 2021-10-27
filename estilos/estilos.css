@@ -1,0 +1,115 @@
+body{
+background-color:#FFF0F5 ;
+color:#45322e ;
+margin: 30px;
+}
+header {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+    font-family: Lucida Handwriting;
+}
+img{
+display:block;
+margin:auto;
+}
+nav{
+    flex: 2;
+    margin-top: 40px;
+}
+.menu{
+    position: absolute;
+    right: 50px;
+}
+
+.menu a{
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+    transition: color 1s;
+    /*text-transform: uppercase;*/
+}
+
+.menu a:hover{
+    color: #dde0f0;
+}
+
+.logo{
+   flex: 1;
+    font-weight: 400;
+    margin:5px;
+    background-size: contain;
+    width: 25%;
+    height: 75px;
+    float: left;
+}
+section{
+  flex: 5;
+    margin-top: 150px;
+
+}
+/* ESTILOS DE LA PAGINA EN GENERAL */
+p {
+    font-family: 'You owe me once', cursive;
+    padding: 20px;
+    font-size: 18px;
+    text-align: justify;
+    margin: 15px 25px;
+    color: black;
+}
+h2 {
+    font-family: 'Lucida Handwriting', sans-serif;
+    margin: 15px 25px;
+}
+footer {
+    display: flex;
+    width: 80%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+/* ESTILOS PARA EL MENU DESPLEGABLE */
+.btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+}
+.btn:hover > span {
+    background-color: #E85860;
+}
+.btn span {
+    display: block;
+    margin: 6px;
+    width: 40px;
+    height: 3px;
+    background: #333;
+}
+@media only screen and (max-width: 550px){
+        nav {
+        overflow: visible;
+    }
+    .menu {
+        width: 100%;
+        right: 0;
+        top: 80px;
+        background: #f1f1f1E6;
+        overflow: hidden;
+        max-height: 0;
+    }
+    .menu a{
+        display: block;
+        text-align: center;
+        padding: 10px;
+        margin: 0;
+    }
+    .btn {
+        display: block;
+        cursor: pointer;
+    }
+    .show {
+        max-height: 500px;
+    }
+}
