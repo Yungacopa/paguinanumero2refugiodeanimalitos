@@ -43,8 +43,95 @@ cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
 proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
 <img src="img/img5.jpg" width="300px" height="300px"/> 
 	</section>
- <footer>
-    Derechos Reservados
+    <h2>Formulario de donacion:</h2>
+	<p>Revise su repuesta</p>
+	<section>
+		<div class="container">
+		<form>
+			<div class="fila">
+			<div class="col-25">
+			<label><b>Nombre: </b></label>
+			</div>
+			<div class="col-75">
+				<input type="text" name="nom" placeholder="Nombre">
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Clave: </b></label>
+			</div>
+			<div class="col-75">
+				<input type="password" name="clave" placeholder="Contraseña" minlength="8" maxlength="15">
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Correo </b></label>
+			</div>
+			<div class="col-75">
+				<input type="email" name="correo" placeholder="Correo electronico">
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Pais: </b></label>
+			</div>
+			<div class="col-75">
+				<select name="pais">
+					<option>Bolivia</option>
+					<option>Peru</option>
+					<option>Argentina</option>
+					<option>Brasil</option>
+					<option>Venezuela</option>
+					<option>Ecuador</option>
+				</select>
+			</div>
+		</div>
+
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Tipo de Donación </b></label>
+			</div>
+			<div class="col-76">
+				<input type="radio" name="Tipo" value="mensual"><b>Mensual</b><br>
+				<input type="radio" name="Tipo" value="trimestral"><b>Trimestral</b><br>
+				<input type="radio" name="Tipo" value="Semestral"><b>Semestral</b><br>
+				<input type="radio" name="Tipo" value="Anual"><b>Anual</b><br>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Monto: </b></label>
+			</div>
+			<div class="col-75">
+				<input type="number" name="monto" min="1">
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Fecha: </b></label>
+			</div>
+			<div class="col-75">
+				<input type="date" name="fecha" min="2021-10-01">
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-25">
+			<label><b>Comentarios </b></label>
+			</div>
+			<div class="col-75">
+				<textarea></textarea>
+			</div>
+		</div>
+		<div class="fila">
+			<div class="col-50">
+			<input type="submit" name="enviar" value="enviar Formulario">
+			</div>
+			<div class="col-50">
+				<input type="reset" name="clear" value="limpiar Formulario">
+			</div>
+	</section>
+	<footer>
 </footer>
   <script type="text/javascript">
         $(".btn").on("click", function(){
